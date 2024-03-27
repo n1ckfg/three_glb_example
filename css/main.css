@@ -7,3 +7,8 @@ body {
 * {
 	cursor: none;
 }
+
+canvas, canvas:focus {
+	outline: none;
+    outline-width: 0;
+}

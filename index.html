@@ -137,10 +137,10 @@
 
 				setupWasd();
 				setupMouse();
-				draw();
+				animate();
 			}
 
-			function draw() {
+			function animate() {
 				updateWasd();
 
 				delta += clock.getDelta();
@@ -151,7 +151,7 @@
 
 				composer.render();
 
-				requestAnimationFrame(draw);
+				requestAnimationFrame(animate);
 			}
 
 			window.onload = init;
